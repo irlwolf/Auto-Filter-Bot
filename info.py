@@ -24,7 +24,7 @@ BOT_TOKEN = environ.get('BOT_TOKEN', '7754700986:AAGHpruS_VdqYrrJuoZBE4jEX5e1SjV
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1302460619').split()]
 USERNAME = environ.get('USERNAME', 'https://telegram.me/irlwolf')
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002452376610'))
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002494287255','-1002409821863').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS','-1002409821863').split()]
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://irlwolf:9aEpUre0fkmBjHVz@cluster0.jkd3o.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DATABASE_URI2 = environ.get('DATABASE_URI2', "")
 DATABASE_NAME = environ.get('DATABASE_NAME', "irlwolf")
