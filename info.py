@@ -24,12 +24,12 @@ BOT_TOKEN = environ.get('BOT_TOKEN', '7754700986:AAGHpruS_VdqYrrJuoZBE4jEX5e1SjV
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1302460619').split()]
 USERNAME = environ.get('USERNAME', 'https://telegram.me/irlwolf')
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002452376610'))
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002494287255').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002494287255','-1002409821863').split()]
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://irlwolf:9aEpUre0fkmBjHVz@cluster0.jkd3o.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DATABASE_URI2 = environ.get('DATABASE_URI2', "")
 DATABASE_NAME = environ.get('DATABASE_NAME', "irlwolf")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Rahul')
-LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', ''))
+LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1002452376610'))
 QR_CODE = environ.get('QR_CODE', 'https://envs.sh/wam.jpg')
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 
@@ -40,9 +40,9 @@ URL = environ.get('URL', '')
 # verify system vars
 IS_VERIFY = is_enabled('IS_VERIFY', True)
 LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', ''))
-TUTORIAL = environ.get("TUTORIAL", "https://youtu.be/0c-i2Lol6LU")
-TUTORIAL2 = environ.get("TUTORIAL2", "https://youtu.be/GdaUbzxDTKs")
-TUTORIAL3 = environ.get("TUTORIAL3", "https://youtu.be/rddlpYLm0G0")
+TUTORIAL = environ.get("TUTORIAL", "https://youtube.com/shorts/ghgse-h0-60?si=UY_La7SlfofI378V")
+TUTORIAL2 = environ.get("TUTORIAL2", "https://youtube.com/shorts/frHzCXS78AM?si=--0NfhfwZrnkWkW7")
+TUTORIAL3 = environ.get("TUTORIAL3", "https://youtube.com/shorts/frHzCXS78AM?si=--0NfhfwZrnkWkW7")
 VERIFY_IMG = environ.get("VERIFY_IMG", "https://graph.org/file/45a270fc6a0a1c183c614.jpg")
 SHORTENER_API = environ.get("SHORTENER_API", "zii2MApF3pahz6kNXg9fhTx1iot1")
 SHORTENER_WEBSITE = environ.get("SHORTENER_WEBSITE", "shareus.io")
@@ -56,7 +56,7 @@ THREE_VERIFY_GAP = int(environ.get('THREE_VERIFY_GAP', "21600"))
 # languages search
 LANGUAGES = ["hindi", "english", "telugu", "tamil", "kannada", "malayalam"]
 
-auth_channel = environ.get('AUTH_CHANNEL', '-1002494287255')
+auth_channel = environ.get('AUTH_CHANNEL', '-1002470891127')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', '-1002452479026'))
 
