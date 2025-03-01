@@ -48,17 +48,17 @@ SHORTENER_API = environ.get("SHORTENER_API", "zii2MApF3pahz6kNXg9fhTx1iot1")
 SHORTENER_WEBSITE = environ.get("SHORTENER_WEBSITE", "shareus.io")
 SHORTENER_API2 = environ.get("SHORTENER_API2", "dc8d1cbea8c19307fbfd4b023f603eba9fb659de")
 SHORTENER_WEBSITE2 = environ.get("SHORTENER_WEBSITE2", "modijiurl.com")
-SHORTENER_API3 = environ.get("SHORTENER_API3", "9c5a6c96077a1b499d8f953331221159383eb434")
-SHORTENER_WEBSITE3 = environ.get("SHORTENER_WEBSITE3", "omegalinks.in")
+SHORTENER_API3 = environ.get("SHORTENER_API3", "6aa4611571be03be41fbb20298aa5c25a9a8fab1")
+SHORTENER_WEBSITE3 = environ.get("SHORTENER_WEBSITE3", "shrinkme.io")
 TWO_VERIFY_GAP = int(environ.get('TWO_VERIFY_GAP', "3600"))
 THREE_VERIFY_GAP = int(environ.get('THREE_VERIFY_GAP', "21600"))
 
 # languages search
 LANGUAGES = ["hindi", "english", "telugu", "tamil", "kannada", "malayalam"]
 
-auth_channel = environ.get('AUTH_CHANNEL', '')
+auth_channel = environ.get('AUTH_CHANNEL', '-1002494287255')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
-SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', ''))
+SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', '-1002452479026'))
 
 # bot settings
 AUTO_FILTER = is_enabled('AUTO_FILTER', True)
