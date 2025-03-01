@@ -18,16 +18,16 @@ def is_enabled(value, default):
         return default
 
 #main variables
-API_ID = int(environ.get('API_ID', ''))
-API_HASH = environ.get('API_HASH', '')
-BOT_TOKEN = environ.get('BOT_TOKEN', '')
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
-USERNAME = environ.get('USERNAME', 'https://telegram.me/TechifyGuru')
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', ''))
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '').split()]
-DATABASE_URI = environ.get('DATABASE_URI', "")
+API_ID = int(environ.get('API_ID', '23580732'))
+API_HASH = environ.get('API_HASH', '81ca3df48f25d954b2ebef5aec715a73')
+BOT_TOKEN = environ.get('BOT_TOKEN', '7754700986:AAGHpruS_VdqYrrJuoZBE4jEX5e1SjVV4Wc')
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1302460619').split()]
+USERNAME = environ.get('USERNAME', 'https://telegram.me/irlwolf')
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002452376610'))
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002494287255').split()]
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://irlwolf:9aEpUre0fkmBjHVz@cluster0.jkd3o.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DATABASE_URI2 = environ.get('DATABASE_URI2', "")
-DATABASE_NAME = environ.get('DATABASE_NAME', "Rahul")
+DATABASE_NAME = environ.get('DATABASE_NAME', "irlwolf")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Rahul')
 LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', ''))
 QR_CODE = environ.get('QR_CODE', 'https://envs.sh/wam.jpg')
@@ -44,10 +44,10 @@ TUTORIAL = environ.get("TUTORIAL", "https://youtu.be/0c-i2Lol6LU")
 TUTORIAL2 = environ.get("TUTORIAL2", "https://youtu.be/GdaUbzxDTKs")
 TUTORIAL3 = environ.get("TUTORIAL3", "https://youtu.be/rddlpYLm0G0")
 VERIFY_IMG = environ.get("VERIFY_IMG", "https://graph.org/file/45a270fc6a0a1c183c614.jpg")
-SHORTENER_API = environ.get("SHORTENER_API", "8c09653e5c38f84d1b76ad3197c5a023e53b494d")
-SHORTENER_WEBSITE = environ.get("SHORTENER_WEBSITE", "onepagelink.in")
-SHORTENER_API2 = environ.get("SHORTENER_API2", "0c8ebd63bfe9f67f9970b8767498ff60316b9b03")
-SHORTENER_WEBSITE2 = environ.get("SHORTENER_WEBSITE2", "tnshort.net")
+SHORTENER_API = environ.get("SHORTENER_API", "zii2MApF3pahz6kNXg9fhTx1iot1")
+SHORTENER_WEBSITE = environ.get("SHORTENER_WEBSITE", "shareus.io")
+SHORTENER_API2 = environ.get("SHORTENER_API2", "dc8d1cbea8c19307fbfd4b023f603eba9fb659de")
+SHORTENER_WEBSITE2 = environ.get("SHORTENER_WEBSITE2", "modijiurl.com")
 SHORTENER_API3 = environ.get("SHORTENER_API3", "9c5a6c96077a1b499d8f953331221159383eb434")
 SHORTENER_WEBSITE3 = environ.get("SHORTENER_WEBSITE3", "omegalinks.in")
 TWO_VERIFY_GAP = int(environ.get('TWO_VERIFY_GAP', "3600"))
